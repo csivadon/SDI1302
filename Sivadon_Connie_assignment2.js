@@ -8,6 +8,7 @@
 var clanOnline = true;
 var	clanMembers = [ "Patrick", "Connie", "Chris", "Andre", "Michael", "Stephan" ];
 var	numberOfMembers;
+var positions = [ "sniper", "defender", "rusher", "rusher", "defender", "floater" ];
 var	clanLeader = "Everyone ready?";
 var	clan = "Yes! Start already!";
 numberOfMembers = clanMembers.length;
@@ -39,10 +40,23 @@ getGameMode(numberOfMembers);
 var getNumberOfPositions = function(numberOfMembers) {
 	console.log("Does everyone have their classes set?");
 	var player = 1;
-	while (player <= 6) {
+	while (player < 6) {
 		console.log(player + " players have their classes set.");
 		player++;
 	};
-	console.log("All players are set and ready to go.");
+	return console.log("All " + player + " players are set and ready to go.");
 };
 getNumberOfPositions(numberOfMembers);
+
+// Array Function
+
+var getPositions = function(clanMembers,positions) {
+	for (var i=0, j=clanMembers.length; i < j; i++) {
+		console.log( clanMembers[i]	+ " is a " + positions[i] + ".");
+	};
+	return console.log( "All members know their positions." );
+};
+getPositions(clanMembers,positions);
+
+//String Function
+
