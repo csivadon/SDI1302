@@ -9,8 +9,8 @@ var clanOnline = true;
 var	clanMembers = [ "Patrick", "Connie", "Chris", "Andre", "Michael", "Stephan" ];
 var	numberOfMembers;
 var positions = [ "sniper", "defender", "rusher", "rusher", "defender", "floater" ];
-var	clanLeader = "Everyone ready?";
-var	clan = "Yes! Start already!";
+var	clanLeaderReady = "Everyone ready?";
+var	clanReady = " Ya!";
 numberOfMembers = clanMembers.length;
 
 // Procedure
@@ -33,7 +33,6 @@ var getGameMode = function(numberOfMembers) {
 		return console.log("Since we have only " + numberOfMembers + " clan members today, let's play \"Kill Confirmed\".");
 	}
 };
-getGameMode(numberOfMembers);
 
 // Number Function
 
@@ -46,7 +45,6 @@ var getNumberOfPositions = function(numberOfMembers) {
 	};
 	return console.log("All " + player + " players are set and ready to go.");
 };
-getNumberOfPositions(numberOfMembers);
 
 // Array Function
 
@@ -56,7 +54,21 @@ var getPositions = function(clanMembers,positions) {
 	};
 	return console.log( "All members know their positions." );
 };
-getPositions(clanMembers,positions);
 
 //String Function
+
+var getStatus = function(clanLeaderReady, clanReady) {
+	if (clanReady === " Ya!") {
+		return console.log(clanLeaderReady + clanReady + " Start already!");	
+	} else {
+		return console.log(clanLeaderReady + " Not yet. Wait to start please.");
+	};
+};
+
+// Output
+
+getGameMode(numberOfMembers);
+getNumberOfPositions(numberOfMembers);
+getPositions(clanMembers,positions);
+getStatus(clanLeaderReady, clanReady);
 
