@@ -27,13 +27,22 @@ playOnline(clanOnline);
 
 var getGameMode = function(numberOfMembers) {
 	if (numberOfMembers > 4) {
-		console.log("Since we have " + numberOfMembers + " clan members today, let's play \"Capture the Flag\".");
+		return console.log("Since we have " + numberOfMembers + " clan members today, let's play \"Capture the Flag\".");
 	} else {
-		console.log("Since we have only " + numberOfMembers + " clan members today, let's play \"Kill Confirmed\".");
+		return console.log("Since we have only " + numberOfMembers + " clan members today, let's play \"Kill Confirmed\".");
 	}
 };
 getGameMode(numberOfMembers);
 
 // Number Function
 
-
+var getNumberOfPositions = function(numberOfMembers) {
+	console.log("Does everyone have their classes set?");
+	var player = 1;
+	while (player <= 6) {
+		console.log(player + " players have their classes set.");
+		player++;
+	};
+	console.log("All players are set and ready to go.");
+};
+getNumberOfPositions(numberOfMembers);
