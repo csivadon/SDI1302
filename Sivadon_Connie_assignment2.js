@@ -21,5 +21,19 @@ var playOnline = function(clanOnline) {
 		console.log("Shucks, nobody is online.  I guess I'll play Resident Evil 6.");	
 	}		
 };
-playOnline();
+playOnline(clanOnline);
+
+// Boolean Function
+
+var getGameMode = function(numberOfMembers) {
+	if (numberOfMembers > 4) {
+		console.log("Since we have " + numberOfMembers + " clan members today, let's play \"Capture the Flag\".");
+	} else {
+		console.log("Since we have only " + numberOfMembers + " clan members today, let's play \"Kill Confirmed\".");
+	}
+};
+getGameMode(numberOfMembers);
+
+// Number Function
+
 
