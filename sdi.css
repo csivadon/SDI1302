@@ -1,5 +1,5 @@
 html {
-    background-color: #E1DFD3;
+    background-color: #99F;
 }
 body {
     font-family: "Lucida Grande", "Arial", sans-serif;
@@ -15,15 +15,15 @@ p {
     margin: 1.5em 0;
 }
 h1 {
-    background-color: #4D4B39;
+    background-color: #93F;
     color: #E1DFD3;
     font-size: 200%;
     padding: 0.75em;
     margin: -0.75em -0.75em 0.75em -0.75em;
 }
 h2 {
-    background-color: #4D4B39;
-    color: #88a75d;
+    background-color: #93F;
+    color: #CCC;
     font-size: 150%;
     padding: 1em;
     margin: -1em -1em 1em -1em;
